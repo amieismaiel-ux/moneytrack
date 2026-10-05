@@ -1225,6 +1225,14 @@
       if (!str) return '';
       return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
     }
+  </script><script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(() => console.log("KiraDuit PWA ready"))
+      .catch(err => console.error("PWA service worker error:", err));
+  });
+}
   </script>
 
 </body>
